@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { BookOpen, Shield, BarChart3, Scale, Info, ArrowRight, Target } from 'lucide-react';
-import nx3dmark = "https://i.imgur.com/61Pnt6T.png";
+const nx3dmark = "https://i.imgur.com/61Pnt6T.png";
 
 const EducationHub: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);

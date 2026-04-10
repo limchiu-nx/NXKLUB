@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, TrendingUp, ShieldCheck, Zap, Globe } from 'lucide-react';
 import { Upredic, Datodurian, NXmarket, Nexstox } from '../components/Icon';
-import nx3dmark = "https://i.imgur.com/61Pnt6T.png";
+const nx3dmark = "https://i.imgur.com/61Pnt6T.png";
 
 interface HomeProps {
   setActivePage: (page: string) => void;
@@ -18,7 +18,7 @@ const Home: React.FC<HomeProps> = ({ setActivePage }) => {
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full max-w-2xl opacity-[0.15] blur-[10px] hidden lg:flex items-center justify-end">
             <img 
               src={nx3dmark} 
-              alt="NX 3D Mark Background" 
+              alt="NX 3D Mark Background 2" 
               className="w-full h-auto object-contain"
               referrerPolicy="no-referrer"
             />
