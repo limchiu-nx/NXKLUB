@@ -183,8 +183,8 @@ const Home: React.FC<HomeProps> = ({ setActivePage }) => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 uppercase">
-                <span className="gradient-text">Opportunity isn’t the problem. Clarity is.</span>
+              <h2 className="text-4xl md:text-5xl font-display  mb-8 uppercase">
+                <span className="gradient-text font-semibold">Opportunity isn’t the problem.</span><br/><span className="font-extrabold">Clarity is.</span>
               </h2>
               <div className="space-y-4 text-xl text-gray-400">
                 <p>Markets move fast. Narratives move faster.</p>

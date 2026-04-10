@@ -5,6 +5,15 @@ const nx3dmark = "https://i.imgur.com/61Pnt6T.png";
 
 const EducationHub: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"]
@@ -68,7 +77,7 @@ const EducationHub: React.FC = () => {
             className="max-w-4xl mx-auto flex flex-col items-center"
           >
            
-            <h1 className="text-5xl md:text-7xl font-display font-semibold uppercase leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-semibold uppercase leading-tight">
               <span className="gradient-text font-extrabold">Education Hub</span>
             </h1>
              <p className="text-xl md:text-2xl text-white uppercase font-bold leading-relaxed mb-8">
@@ -107,11 +116,11 @@ const EducationHub: React.FC = () => {
               transition={{ duration: 1 }}
               className="relative flex items-center justify-center order-2 lg:order-1"
             >
-              <div className="absolute inset-0 bg-brand/40 rounded-full blur-[100px]" />
+              <div className="absolute inset-0 bg-brand/40 rounded-full blur-[100px] hidden lg:block" />
               <motion.img 
                 src={nx3dmark} 
                 alt="NX 3D Mark" 
-                style={{ y, rotate }}
+                style={isMobile ? {} : { y, rotate }}
                 className="relative w-full max-w-md h-auto z-10"
                 referrerPolicy="no-referrer"
               />

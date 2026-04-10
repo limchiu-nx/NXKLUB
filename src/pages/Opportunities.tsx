@@ -32,7 +32,7 @@ const Opportunities: React.FC<OpportunitiesProps> = ({ setActivePage }) => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl mx-auto"
           >
-            <h1 className="text-5xl md:text-7xl font-display font-semibold uppercase">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-semibold uppercase">
               <span className="gradient-text font-extrabold">Opportunities</span>
             </h1>
             <div className="text-xl md:text-2xl text-white uppercase font-bold leading-relaxed mb-8">
