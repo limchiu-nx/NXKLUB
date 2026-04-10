@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, TrendingUp, ShieldCheck, Zap, Globe } from 'lucide-react';
 import { Upredic, Datodurian, NXmarket, Nexstox } from '../components/Icon';
-import nx3dmark from '../assets/images/nx-3dmark-small.png';
+import nx3dmark = "https://i.imgur.com/61Pnt6T.png";
 
 interface HomeProps {
   setActivePage: (page: string) => void;

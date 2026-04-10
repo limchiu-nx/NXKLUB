@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Ticket, Gamepad2, Target, Users, ArrowRight, ExternalLink } from 'lucide-react';
-import ticketImg from '../assets/images/lukcyxoticket.png';
-import heroImg from '../assets/images/hero_image_xo.png';
+const ticketImg = "https://i.imgur.com/FNkwzro.png";
+const heroImg = "https://i.imgur.com/nRBxHLP.png";
 
 interface LuckyXOProps {
   setActivePage?: (page: string) => void;
