@@ -84,7 +84,7 @@ const Home: React.FC<HomeProps> = ({ setActivePage }) => {
               <span className="text-white">Your gateway to </span>
               <span className="gradient-text">
                 <span className="font-extrabold">earning</span>, 
-                <span className="font-extrabold sm:pl-[15px]">investing</span>, and <br className="hidden sm:block" />
+                <span className="font-extrabold pl-[15px]">investing</span>, and <br className="hidden sm:block" />
                 <span className="font-extrabold sm:px-[15px]">real-world yield.</span>
               </span>
             </h1>
