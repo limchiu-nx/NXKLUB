@@ -160,7 +160,7 @@ const Home: React.FC<HomeProps> = ({ setActivePage }) => {
                     }
                   }, 100);
                 }}
-                className="aspect-square bg-[#160D0B] border border-white/5 rounded-3xl shadow-[inset_0_0_30px_#FF8F0344,inset_0_-15px_25px_-10px_#FF5306] hover:shadow-[inset_0_0_30px_#FF8F0344,inset_0_-90px_25px_-10px_#FF8F0344] hover:border-brand/50 transition-all duration-500 group flex items-center justify-center p-4 cursor-pointer relative overflow-hidden"
+                className="aspect-square bg-[#160D0B] border border-white/5 rounded-3xl shadow-[inset_0_0_30px_#FF8F0344,inset_0_-15px_25px_-10px_#FF5306] hover:shadow-[inset_0_0_30px_#FF5306,inset_0_-80px_25px_-10px_#9C3406] hover:border-brand transition-all duration-500 group flex items-center justify-center p-4 cursor-pointer relative overflow-hidden"
               >
                 <div className="w-[80%] flex flex-col items-center justify-center transition-all duration-500 group-hover:-translate-y-4">
                   {product.icon}

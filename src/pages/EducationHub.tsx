@@ -30,27 +30,6 @@ const EducationHub: React.FC = () => {
     { text: 'How to evaluate opportunities without pressure', icon: <Target className="text-brand" /> },
   ];
 
-  const blogPosts = [
-    {
-      title: 'Understanding Real-World Asset Tokenization',
-      category: 'Fundamentals',
-      image: 'https://picsum.photos/seed/finance/800/600',
-      date: 'Mar 24, 2026'
-    },
-    {
-      title: 'Risk Management in Decentralized Markets',
-      category: 'Strategy',
-      image: 'https://picsum.photos/seed/risk/800/600',
-      date: 'Mar 20, 2026'
-    },
-    {
-      title: 'The Evolution of Yield Structures',
-      category: 'Analysis',
-      image: 'https://picsum.photos/seed/yield/800/600',
-      date: 'Mar 15, 2026'
-    }
-  ];
-
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -59,17 +38,17 @@ const EducationHub: React.FC = () => {
           <motion.div 
             animate={{
               scale: [1, 1.2, 1],
-              opacity: [0.1, 0.2, 0.1],
+              opacity: [0.5, 0.8, 0.5],
             }}
             transition={{
               duration: 8,
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand/15 rounded-full blur-[120px]" 
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand/30 rounded-full blur-[120px]" 
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -155,50 +134,6 @@ const EducationHub: React.FC = () => {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Block Section */}
-      <section className="py-24 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-16">
-            <div>
-              <h2 className="text-4xl font-display font-semibold uppercase mb-4">Latest Insights</h2>
-              <p className="text-gray-400">Deep dives into the NX ecosystem and beyond.</p>
-            </div>
-            <button className="hidden sm:flex items-center gap-2 text-brand font-bold uppercase tracking-widest hover:text-white transition-colors">
-              View All <ArrowRight size={20} />
-            </button>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blogPosts.map((post, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group cursor-pointer"
-              >
-                <div className="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-white/10">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute top-4 left-4 px-4 py-2 bg-black/60 backdrop-blur-md rounded-full text-xs font-bold text-brand uppercase tracking-widest border border-white/10">
-                    {post.category}
-                  </div>
-                </div>
-                <h3 className="text-2xl font-display font-semibold text-white mb-3 group-hover:text-brand transition-colors">
-                  {post.title}
-                </h3>
-                <p className="text-gray-500 text-sm uppercase tracking-widest font-bold">{post.date}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

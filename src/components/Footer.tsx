@@ -66,8 +66,18 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => (
       <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
         <p>© 2026 NXKLUB. All rights reserved.</p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <span>Privacy Policy</span>
-          <span>Terms of Service</span>
+          <span 
+            className="hover:text-brand cursor-pointer transition-colors"
+            onClick={() => setActivePage?.('privacy')}
+          >
+            Privacy Policy
+          </span>
+          <span 
+            className="hover:text-brand cursor-pointer transition-colors"
+            onClick={() => setActivePage?.('terms')}
+          >
+            Terms of Service
+          </span>
         </div>
       </div>
     </div>

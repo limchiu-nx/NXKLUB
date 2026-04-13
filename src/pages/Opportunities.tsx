@@ -15,21 +15,22 @@ const Opportunities: React.FC<OpportunitiesProps> = ({ setActivePage }) => {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <motion.div 
             animate={{
-              scale: [1, 1.3, 1],
-              opacity: [0.1, 0.2, 0.1],
+              scale: [1, 1.2, 1],
+              opacity: [0.5, 0.8, 0.5],
             }}
             transition={{
-              duration: 10,
+              duration: 8,
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-brand/15 rounded-full blur-[120px]" 
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand/30 rounded-full blur-[120px]" 
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-semibold uppercase">
@@ -41,8 +42,10 @@ const Opportunities: React.FC<OpportunitiesProps> = ({ setActivePage }) => {
             <div className="text-xl md:text-2xl text-gray-400 leading-relaxed mb-8">
               <p>NXKLUB presents a range of opportunities across<br/> yield, investment, speculation, and trading.</p>
             </div>
-            <div className="text-lg text-brand/80 mb-10 font-medium">
-              <p>This page explains the landscape. Participation happens elsewhere — and only when you’re ready.</p>
+            <div className="flex items-center justify-center gap-4 text-brand font-bold uppercase tracking-widest">
+              <div className="h-px w-12 bg-brand" />
+              <span>What you’ll find here</span>
+              <div className="h-px w-12 bg-brand" />
             </div>
           </motion.div>
         </div>

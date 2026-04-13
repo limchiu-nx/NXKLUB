@@ -12,6 +12,8 @@ import Home from './pages/Home';
 import EducationHub from './pages/EducationHub';
 import Opportunities from './pages/Opportunities';
 import LuckyXO from './pages/LuckyXO';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 export default function App() {
   const [activePage, setActivePage] = useState('home');
@@ -36,6 +38,10 @@ export default function App() {
         return <Opportunities setActivePage={handleSetActivePage} />;
       case 'lucky':
         return <LuckyXO setActivePage={handleSetActivePage} />;
+      case 'privacy':
+        return <PrivacyPolicy />;
+      case 'terms':
+        return <TermsOfService />;
       default:
         return <Home setActivePage={handleSetActivePage} />;
     }
